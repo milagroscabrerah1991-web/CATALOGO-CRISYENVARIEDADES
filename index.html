@@ -3,530 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crisyen Variedades - Catálogo</title>
+    <title>Crisyen Variedades</title>
+
     <style>
         body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url("fondo.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.portal {
-    background-color: rgba(0, 0, 0, 0.6);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-.contenido {
-    background: rgba(255, 255, 255, 0.9);
-    color: #333;
-    padding: 30px;
-    border-radius: 15px;
-    max-width: 400px;
-}
-
-.foto {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-
-.boton {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #c79c5b;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-}
-        /* Estilos de Diseño */
-        body
-        <div class="portal">
-    <div class="contenido">
-        <img src="mi-foto.jpeg" class="foto">
-
-        <h1>Bienvenidos a Crisyen Variedades</h1>
-
-        <p>
-        Nos dedicamos a ofrecer una amplia variedad de productos pensados 
-        para tu bienestar, cuidado personal y estilo de vida. Contamos con artículos de belleza, 
-        cuidado facial y corporal, perfumes, cremas, aceites naturales, suplementos y productos para el día a día, 
-        seleccionados con calidad y buen precio para ti.
-        </p>
-
-        <a href="#catalogo" class="boton">Ver Catálogo</a>
-    </div>
-</div>
-{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #fdfaf6;
-            color: #4a4a4a;
             margin: 0;
-            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-image: url("fondo.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* PORTAL */
+        .portal {
+            background-color: rgba(0,0,0,0.6);
+            min-height: 100vh;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-        }
-
-        /* Estilo del Logo y Encabezado */
-        .header {
             text-align: center;
-            margin-bottom: 40px;
-            margin-top: 20px;
         }
 
-        .logo-img {
-            max-width: 150px;
-            height: auto;
+        .contenido {
+            background: rgba(255,255,255,0.95);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 420px;
+        }
+
+        .foto {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
             margin-bottom: 15px;
         }
 
-        h1 {
-            color: #b8928a;
-            font-size: 2.8rem;
-            margin: 0;
-            font-weight: 300;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+        .boton {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #c79c5b;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
         }
 
+        /* CATÁLOGO */
         .catalogo {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
-            max-width: 1200px;
-            margin-bottom: 80px;
+            padding: 40px;
+            background: #fdfaf6;
         }
 
         .producto {
             background: white;
             border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.03);
             width: 280px;
-            padding: 25px;
+            padding: 20px;
             text-align: center;
-            border: 1px solid #f0f0f0;
-            transition: 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .producto:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .producto img {
             width: 100%;
-            height: 250px;
+            height: 220px;
             object-fit: contain;
-            border-radius: 15px;
-            margin-bottom: 20px;
-        }
-
-        .producto h2 {
-            font-size: 1.3rem;
-            margin: 10px 0;
-            color: #333;
         }
 
         .precio {
-            font-size: 1.5rem;
             font-weight: bold;
-            color: #d4a373;
-            margin-bottom: 12px;
+            color: #c79c5b;
         }
 
-        .descripcion {
-            font-size: 0.9rem;
-            color: #888;
-            line-height: 1.5;
-            margin-bottom: 20px;
-        }
-
-        /* Botón de WhatsApp en la tarjeta */
         .btn-whatsapp {
-            background-color: #25d366;
+            background: #25d366;
             color: white;
+            padding: 10px;
+            border-radius: 25px;
             text-decoration: none;
-            padding: 12px;
-            border-radius: 50px;
-            font-weight: bold;
             display: block;
-            transition: background 0.3s;
+            margin-top: 10px;
         }
 
-        .btn-whatsapp:hover {
-            background-color: #128c7e;
-        }
-
-        /* Botón Flotante */
         .flotante {
             position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
             width: 60px;
             height: 60px;
-            bottom: 40px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-            z-index: 100;
+            border-radius: 50%;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
             text-decoration: none;
-        }
-
-        .flotante:hover {
-            transform: scale(1.1);
         }
     </style>
 </head>
+
 <body>
 
-    <div class="header">
-        <img src="LOGO.jpg" alt="Logo Crisyen Variedades" class="logo-img" onerror="this.style.display='none'">
-        <h1>Crisyen Variedades</h1>
+<!-- PORTAL -->
+<div class="portal">
+    <div class="contenido">
+        <img src="mi-foto.jpeg" class="foto">
+        <h1>Bienvenidos a Crisyen Variedades</h1>
+        <p>
+            Ofrecemos productos de belleza, cuidado personal, perfumes,
+            cremas, suplementos y mucho más.
+        </p>
+        <a href="#catalogo" class="boton">Ver Catálogo</a>
+    </div>
+</div>
+
+<!-- CATÁLOGO -->
+<div class="catalogo" id="catalogo">
+
+    <!-- EJEMPLO PRODUCTO -->
+    <div class="producto">
+        <img src="PERFUMES ZARA MEN.jpg">
+        <h3>Perfume Zara Hombre</h3>
+        <p class="precio">$2000</p>
+        <a class="btn-whatsapp" href="https://wa.me/18097022271">Pedir por WhatsApp</a>
     </div>
 
-    <div class="catalogo">
-        
-        <div class="producto">
-            <div>
-                <img src="PERFUMES ZARA MEN.jpg" alt="Perfume Hombre">
-                <h2>Perfume Hombre Zara</h2>
-                <p class="precio">$2000</p>
-                <p class="descripcion">Fragancia masculina exclusiva con notas elegantes y duraderas.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20Perfume%20de%20Hombre" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
+    <!-- Aquí siguen todos tus productos -->
+</div>
 
-        <div class="producto">
-            <div>
-                <img src="PERFUME ZARA MUJER.jpg" alt="Perfume Mujer">
-                <h2>Perfume Mujer Zara</h2>
-                <p class="precio">$1500</p>
-                <p class="descripcion">Esencia femenina delicada, ideal para resaltar tu personalidad.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20Perfume%20de%20Mujer" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-        <div class="producto">
-            <div>
-                <img src="CREMA CORPORAL ALOE.png" alt="Crema Aloe">
-                <h2>Crema Aloe Vera</h2>
-                <p class="precio">$650</p>
-                <p class="descripcion">Loción hidratante con ácido hialurónico para una piel siempre suave.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20la%20Crema%20de%20Aloe" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-        <div class="producto">
-            <div>
-                <img src="FILTRO SOLAR FACIAL..png" alt="Protector Solar">
-                <h2>Protector Solar Facial</h2>
-                <p class="precio">$900</p>
-                <p class="descripcion">Protección facial 50+ de alta eficacia contra los rayos UV.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20Protector%20Solar" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-        <div class="producto">
-            <div>
-                <img src="LINEA ARGAN.jpg" alt="Línea Argan">
-                <h2>Línea Argán</h2>
-                <p class="precio">$1500</p>
-                <p class="descripcion">Tratamiento capilar nutritivo para brillo y nutrición profunda.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20la%20Linea%20de%20Argan" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-  <div class="producto">
-            <div>
-                <img src="ACEITE ARGAN.png" alt="aceite Argan">
-                <h2>Aceite Argán</h2>
-                <p class="precio">$600</p>
-                <p class="descripcion">Hidrata, nutre y aporta brillo a la piel y al cabello. Ideal para uso diario.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20aceite%20de%20Argan" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
-                <img src="ACEITE ALOE.png" alt="Aceite Aloe">
-                <h2>Aceite Aloe</h2>
-                <p class="precio">$600</p>
-                <p class="descripcion">Hidrata profundamente, calma la piel y aporta una sensación fresca y suave. Ideal para uso diario después del baño o del sol.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20aceite%20de%20Aloe" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
-                <img src="ANTIMANCHAS SERUM.jpg" alt="antimanchas serum">
-                <h2>Antimanchas Serum</h2>
-                <p class="precio">$950</p>
-                <p class="descripcion">Ayuda a unificar el tono de la piel, reducir manchas y aportar luminosidad. Ideal para el uso diario en el rostro.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20Serum%20de%20Antimanchas" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
-                <img src="CREMA FACIAL.jpg" alt="Crema Facial">
-                <h2>Crema Facial</h2>
-                <p class="precio">$650</p>
-                <p class="descripcion">Crema facial de textura ligera que hidrata, reafirma y ayuda a mejorar la apariencia de la piel, dejándola suave y luminosa.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20la%20crema%20de%20Sisbela" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
-                <img src="CREMAS CORPORALES.jpg" alt="Cremas Corporales">
-                <h2>cremas corporales</h2>
-                <p class="precio">$650</p>
-                <p class="descripcion">Hidrata profundamente, deja la piel suave y con una sensación fresca durante todo el día.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20la%20crema%20de%20Corporal" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
-                <img src="JABÓN FACIAL LECHE.jpg" alt="Jabón Facial">
-                <h2>Jabón Facial</h2>
-                <p class="precio">$500</p>
-                <p class="descripcion">Ayuda a limpiar el rostro, controlar el exceso de grasa y dejar la piel fresca y libre de impurezas.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20Jabón%20de%20Facial" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
-                <img src="PERFUME CABALLEROS.jpg" alt="PERFUME CABALLERO">
-                <h2>Perfume Caballero Pharma</h2>
-                <p class="precio">$2000.00</p>
-                <p class="descripcion">Fragancia masculina con aroma intenso y duradero, ideal para el uso diario o ocasiones especiales.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20perfume%20de%20pharma" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
-                <img src="PERFUME DAMA LA CURA.png" alt="PERFUME DAMA LA CURA">
-                <h2>PERFUME DAMA La Cura</h2>
-                <p class="precio">$1300.00</p>
-                <p class="descripcion">Fragancia femenina con aroma delicado y envolvente, ideal para resaltar tu esencia todos los días.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20perfume%20de%20la cura" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
-                <img src="PERFUME DAMA.png" alt="PERFUME DAMA CABOTINE">
-                <h2>PERFUME DAMA Cabotine</h2>
-                <p class="precio">$1700.00</p>
-                <p class="descripcion">Fragancia femenina con aroma delicado y envolvente, ideal para resaltar tu esencia todos los días.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20perfume%20de%20cabotine" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
-                <img src="PERFUME DAMAS.jpg" alt="PERFUME DAMA PHARMA">
-                <h2>PERFUME DAMA PHARMA</h2>
-                <p class="precio">$2000.00</p>
-                <p class="descripcion">Fragancia femenina con aroma delicado y envolvente, ideal para resaltar tu esencia todos los días.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20perfume%20de%20pharma" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
-                <img src="PERFUME FLOR DE MAYO DAMAS.png" alt="PERFUME DAMA FLOR DE MAYO">
-                <h2>PERFUME DAMA FLOR DE MAYO</h2>
-                <p class="precio">$650.00</p>
-                <p class="descripcion">Fragancia femenina con aroma delicado y envolvente, ideal para resaltar tu esencia todos los días.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20perfume%20de%20flor de mayo" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
-                <img src="PERLAS FACIAL ANTIEDAD.png" alt="PERLA ANTIEDAD">
-                <h2>PERLA FACIAL ANTIEDAD</h2>
-                <p class="precio">$250.00</p>
-                <p class="descripcion">Ayuda a reducir signos de la edad, hidrata profundamente y deja la piel más firme y luminosa.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesan%20las%20perlas%20de%20Antiedad" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
-                <img src="Vinos.jpeg" alt="Vinos varias presentaciones">
-                <h2>Vinos Varios</h2>
-                <p class="precio">$800.00</p>
-                <p class="descripcion">Vinos de excelente calidad, con sabores equilibrados y aromas agradables, ideales para acompañar comidas o disfrutar en cualquier ocasión.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20vino%20de%20seco" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-        
-<div class="producto">
-            <div>
-                <img src="COLAGENO EN POLVO.jpg" alt="Colágeno en Polvo">
-                <h2>Colágeno en Polvo</h2>
-                <p class="precio">$00.00</p>
-                <p class="descripcion">Suplemento en polvo que apoya la salud de la piel, uñas y articulaciones, aportando firmeza y vitalidad.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20Suplemento%20de%20Colágeno" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-        <div class="producto">
-            <div>
-                <img src="MEMORY FORTE.jpg" alt="Memory Forte">
-                <h2>Suplemento para la memoria</h2>
-                <p class="precio">$800.00</p>
-                <p class="descripcion">Ideal para mantener la mente activa y potenciar la memoria y la concentración de forma natural.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20Suplemento%20de%20Memory" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-        <div class="producto">
-            <div>
-                <img src="SUPLEMENTO DORMIR.JPG" alt="Suplemento Dormir">
-                <h2>Suplemento para Dormir</h2>
-                <p class="precio">$800.00</p>
-                <p class="descripcion">Perfecto para tu rutina nocturna, apoya un sueño tranquilo y relajado cada noche.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20Suplemento%20de%20Memory" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-        <div class="producto">
-            <div>
-                <img src="VITAMINAS Y MINERALES.jpeg" alt="Vitaminas y Minerales">
-                <h2>Suplemento Vitamínico</h2>
-                <p class="precio">$800.00</p>
-                <p class="descripcion">Fórmula completa que ayuda a mantener el equilibrio nutricional, apoyar tu energía y bienestar diario.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20Suplemento%20de%20VM" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-        
- <div class="producto">
-            <div>
-                <img src="Gases.jpg" alt="Suplemento para Gases">
-                <h2>Suplemento para Gases</h2>
-                <p class="precio">$800.00</p>
-                <p class="descripcion">Ayuda a aliviar la sensación de gas y malestar abdominal de forma rápida y eficaz.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20Suplemento%20de%20Gases" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-         <div class="producto">
-            <div>
-                <img src="Innovit.png" alt="Suplemento Vitamina B">
-                <h2>Suplemento Vitamínico</h2>
-                <p class="precio">$650.00</p>
-                <p class="descripcion">Suplemento con complejo de vitaminas del grupo B que ayuda a apoyar el metabolismo energético, reducir la fatiga y contribuir al bienestar general.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20Suplemento%20de%20Innovit" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-        <div class="producto">
-            <div>
-                <img src="Crema de avena.jpg" alt="Crema Corporal Avena">
-                <h2>Crema Corporal</h2>
-                <p class="precio">$800.00</p>
-                <p class="descripcion">Hidrata profundamente, calma la piel sensible y deja una sensación suave y nutrida.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20la%20crema%20de%20avena" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-        
-    </div>
-
-    <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20tengo%20una%20consulta" class="flotante" target="_blank">
-        <svg width="35" height="35" fill="white" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.406.836 2.964 1.282 4.56 1.285 5.013 0 9.095-4.082 9.098-9.095.001-2.43-.944-4.713-2.662-6.43s-4-2.663-6.432-2.664c-5.014 0-9.096 4.084-9.098 9.095-.001 1.706.469 3.376 1.357 4.853l-1.005 3.675 3.782-.992zm11.332-11.664c.299.149.499.225.549.309.049.083.049.481-.149.914-.199.432-1.163 1.661-1.163 1.661-.415.448-.847.515-1.429.232-.581-.282-2.459-1.011-3.411-1.859-.952-.848-1.545-1.578-1.744-1.911-.199-.332-.017-.514.149-.68.149-.149.332-.382.499-.573.166-.191.216-.324.324-.54.108-.216.054-.407-.027-.573-.081-.166-.722-1.737-.99-2.384-.26-.63-.526-.54-.722-.55l-.615-.01c-.216 0-.565.081-.864.407-.299.324-1.146 1.121-1.146 2.732 0 1.611 1.171 3.164 1.33 3.38.158.216 2.305 3.52 5.584 4.939.781.338 1.39.54 1.865.69.784.249 1.498.214 2.062.13.629-.094 1.927-.788 2.193-1.545.266-.757.266-1.404.187-1.545-.079-.142-.291-.226-.59-.376z"/></svg>
-    </a>
+<!-- BOTÓN WHATSAPP -->
+<a href="https://wa.me/18097022271" class="flotante">💬</a>
 
 </body>
 </html>
-
-<footer style="margin-top: 50px; padding: 40px 20px; background-color: #f0ebe3; width: 100%; text-align: center; border-top: 1px solid #d4a373; box-sizing: border-box;">
-        
-        <div style="margin-bottom: 25px;">
-            <a href="https://www.instagram.com/crisyenvariedades" target="_blank" style="text-decoration: none; color: #b8928a; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 10px;">
-                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                Síguenos en Instagram: @crisyervariedades
-            </a>
-        </div>
-
-            <p style="font-size: 0.8rem; color: #aaa; margin-top: 10px;">© 2026 - Todos los derechos reservados</p>
-        </div>
-
-    </footer>
