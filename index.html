@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crisyen Variedades - Catálogo</title>
+    <title>Crisyen Variedades - Catálogo por Categorías</title>
     <style>
-        /* Estilos Generales */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #fdfaf6;
@@ -13,7 +12,6 @@
             padding: 0;
         }
 
-        /* Encabezado y Logo */
         .header {
             text-align: center;
             padding: 30px 20px;
@@ -26,22 +24,28 @@
             margin-bottom: 10px;
         }
 
-        h1 {
-            color: #333;
-            margin: 0;
+        /* Estilo para los Títulos de Categoría */
+        .categoria-titulo {
+            text-align: center;
+            margin: 50px auto 20px;
+            font-size: 2rem;
+            color: #d4a373;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #d4a373;
+            max-width: 300px;
+            padding-bottom: 10px;
         }
 
-        /* Catálogo Grid */
         .catalogo {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 25px;
-            padding: 30px;
+            padding: 0 30px 30px;
             max-width: 1200px;
             margin: auto;
         }
 
-        /* Tarjeta de Producto */
         .producto {
             background: white;
             border-radius: 20px;
@@ -54,9 +58,7 @@
             justify-content: space-between;
         }
 
-        .producto:hover {
-            transform: scale(1.03);
-        }
+        .producto:hover { transform: scale(1.03); }
 
         .producto img {
             width: 100%;
@@ -80,7 +82,6 @@
             min-height: 60px;
         }
 
-        /* Botón de WhatsApp - GRANDE Y VERDE */
         .btn-whatsapp {
             background-color: #25d366;
             color: white;
@@ -88,17 +89,13 @@
             padding: 15px;
             border-radius: 12px;
             font-weight: bold;
-            font-size: 1.1rem; /* Letras más grandes */
+            font-size: 1.1rem;
             display: block;
-            transition: background 0.3s, transform 0.2s;
+            transition: background 0.3s;
         }
 
-        .btn-whatsapp:hover {
-            background-color: #128c7e;
-            transform: translateY(-2px);
-        }
+        .btn-whatsapp:hover { background-color: #128c7e; }
 
-        /* Botón Flotante */
         .flotante {
             position: fixed;
             width: 60px;
@@ -108,40 +105,32 @@
             background-color: #25d366;
             color: #FFF;
             border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 5px 15px rgba(0,0,0,0.3);
-            z-index: 100;
             display: flex;
             align-items: center;
             justify-content: center;
             text-decoration: none;
-        }
-
-        .flotante:hover {
-            transform: scale(1.1);
+            box-shadow: 2px 5px 15px rgba(0,0,0,0.3);
+            z-index: 100;
         }
 
         footer {
             margin-top: 50px;
             padding: 40px 20px;
             background-color: #f0ebe3;
-            width: 100%;
             text-align: center;
             border-top: 1px solid #d4a373;
-            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <img src="LOGO.jpg" alt="Logo Crisyen Variedades" class="logo-img" onerror="this.style.display='none'">
+        <img src="LOGO.jpg" alt="Logo" class="logo-img" onerror="this.style.display='none'">
         <h1>Crisyen Variedades</h1>
     </div>
 
+    <h2 class="categoria-titulo">Perfumería</h2>
     <div class="catalogo">
-        
         <div class="producto">
             <div>
                 <img src="PERFUMES ZARA MEN.jpg" alt="Perfume Hombre">
@@ -162,6 +151,80 @@
                 <p class="descripcion">Esencia femenina delicada, ideal para resaltar tu personalidad.</p>
             </div>
             <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20Perfume%20de%20Mujer" target="_blank" class="btn-whatsapp">
+                Pedir por WhatsApp
+            </a>
+        </div>
+
+       <div class="producto">
+            <div>
+                <img src="PERFUME CABALLEROS.jpg" alt="PERFUME CABALLERO">
+                <h2>Perfume Caballero Pharma</h2>
+                <p class="precio">$2000.00</p>
+                <p class="descripcion">Fragancia masculina con aroma intenso y duradero, ideal para el uso diario o ocasiones especiales.</p>
+            </div>
+            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20perfume%20de%20pharma" target="_blank" class="btn-whatsapp">
+                Pedir por WhatsApp
+            </a>
+        </div> 
+
+        <div class="producto">
+            <div>
+                <img src="PERFUME DAMA LA CURA.png" alt="PERFUME DAMA LA CURA">
+                <h2>PERFUME DAMA La Cura</h2>
+                <p class="precio">$1300.00</p>
+                <p class="descripcion">Fragancia femenina con aroma delicado y envolvente, ideal para resaltar tu esencia todos los días.</p>
+            </div>
+            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20perfume%20de%20la cura" target="_blank" class="btn-whatsapp">
+                Pedir por WhatsApp
+            </a>
+        </div>
+
+<div class="producto">
+            <div>
+                <img src="PERFUME DAMA.png" alt="PERFUME DAMA CABOTINE">
+                <h2>PERFUME DAMA Cabotine</h2>
+                <p class="precio">$1700.00</p>
+                <p class="descripcion">Fragancia femenina con aroma delicado y envolvente, ideal para resaltar tu esencia todos los días.</p>
+            </div>
+            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20perfume%20de%20cabotine" target="_blank" class="btn-whatsapp">
+                Pedir por WhatsApp
+            </a>
+        </div>
+
+<div class="producto">
+            <div>
+                <img src="PERFUME DAMAS.jpg" alt="PERFUME DAMA PHARMA">
+                <h2>PERFUME DAMA PHARMA</h2>
+                <p class="precio">$2000.00</p>
+                <p class="descripcion">Fragancia femenina con aroma delicado y envolvente, ideal para resaltar tu esencia todos los días.</p>
+            </div>
+            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20perfume%20de%20pharma" target="_blank" class="btn-whatsapp">
+                Pedir por WhatsApp
+            </a>
+        </div>
+
+<div class="producto">
+            <div>
+                <img src="PERFUME FLOR DE MAYO DAMAS.png" alt="PERFUME DAMA FLOR DE MAYO">
+                <h2>PERFUME DAMA FLOR DE MAYO</h2>
+                <p class="precio">$650.00</p>
+                <p class="descripcion">Fragancia femenina con aroma delicado y envolvente, ideal para resaltar tu esencia todos los días.</p>
+            </div>
+            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20perfume%20de%20flor de mayo" target="_blank" class="btn-whatsapp">
+                Pedir por WhatsApp
+            </a>
+        </div>
+
+        <h2 class="categoria-titulo">Cuidado Personal</h2>
+    <div class="catalogo">
+        <div class="producto">
+            <div>
+                <img src="Crema de avena.jpg" alt="Crema Corporal Avena">
+                <h2>Crema Corporal</h2>
+                <p class="precio">$800.00</p>
+                <p class="descripcion">Hidrata profundamente, calma la piel sensible y deja una sensación suave y nutrida.</p>
+            </div>
+            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20la%20crema%20de%20avena" target="_blank" class="btn-whatsapp">
                 Pedir por WhatsApp
             </a>
         </div>
@@ -276,66 +339,6 @@
 
 <div class="producto">
             <div>
-                <img src="PERFUME CABALLEROS.jpg" alt="PERFUME CABALLERO">
-                <h2>Perfume Caballero Pharma</h2>
-                <p class="precio">$2000.00</p>
-                <p class="descripcion">Fragancia masculina con aroma intenso y duradero, ideal para el uso diario o ocasiones especiales.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20perfume%20de%20pharma" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
-                <img src="PERFUME DAMA LA CURA.png" alt="PERFUME DAMA LA CURA">
-                <h2>PERFUME DAMA La Cura</h2>
-                <p class="precio">$1300.00</p>
-                <p class="descripcion">Fragancia femenina con aroma delicado y envolvente, ideal para resaltar tu esencia todos los días.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20perfume%20de%20la cura" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
-                <img src="PERFUME DAMA.png" alt="PERFUME DAMA CABOTINE">
-                <h2>PERFUME DAMA Cabotine</h2>
-                <p class="precio">$1700.00</p>
-                <p class="descripcion">Fragancia femenina con aroma delicado y envolvente, ideal para resaltar tu esencia todos los días.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20perfume%20de%20cabotine" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
-                <img src="PERFUME DAMAS.jpg" alt="PERFUME DAMA PHARMA">
-                <h2>PERFUME DAMA PHARMA</h2>
-                <p class="precio">$2000.00</p>
-                <p class="descripcion">Fragancia femenina con aroma delicado y envolvente, ideal para resaltar tu esencia todos los días.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20perfume%20de%20pharma" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
-                <img src="PERFUME FLOR DE MAYO DAMAS.png" alt="PERFUME DAMA FLOR DE MAYO">
-                <h2>PERFUME DAMA FLOR DE MAYO</h2>
-                <p class="precio">$650.00</p>
-                <p class="descripcion">Fragancia femenina con aroma delicado y envolvente, ideal para resaltar tu esencia todos los días.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20perfume%20de%20flor de mayo" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
-
-<div class="producto">
-            <div>
                 <img src="PERLAS FACIAL ANTIEDAD.png" alt="PERLA ANTIEDAD">
                 <h2>PERLA FACIAL ANTIEDAD</h2>
                 <p class="precio">$250.00</p>
@@ -345,19 +348,9 @@
                 Pedir por WhatsApp
             </a>
         </div>
-
-<div class="producto">
-            <div>
-                <img src="Vinos.jpeg" alt="Vinos varias presentaciones">
-                <h2>Vinos Varios</h2>
-                <p class="precio">$800.00</p>
-                <p class="descripcion">Vinos de excelente calidad, con sabores equilibrados y aromas agradables, ideales para acompañar comidas o disfrutar en cualquier ocasión.</p>
-            </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20vino%20de%20seco" target="_blank" class="btn-whatsapp">
-                Pedir por WhatsApp
-            </a>
-        </div>
         
+        <h2 class="categoria-titulo">Suplementos</h2>
+    <div class="catalogo">
 <div class="producto">
             <div>
                 <img src="COLAGENO EN POLVO.jpg" alt="Colágeno en Polvo">
@@ -430,18 +423,19 @@
             </a>
         </div>
 
-        <div class="producto">
+    <h2 class="categoria-titulo">Más</h2>
+    <div class="catalogo">
+<div class="producto">
             <div>
-                <img src="Crema de avena.jpg" alt="Crema Corporal Avena">
-                <h2>Crema Corporal</h2>
+                <img src="Vinos.jpeg" alt="Vinos varias presentaciones">
+                <h2>Vinos Varios</h2>
                 <p class="precio">$800.00</p>
-                <p class="descripcion">Hidrata profundamente, calma la piel sensible y deja una sensación suave y nutrida.</p>
+                <p class="descripcion">Vinos de excelente calidad, con sabores equilibrados y aromas agradables, ideales para acompañar comidas o disfrutar en cualquier ocasión.</p>
             </div>
-            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20la%20crema%20de%20avena" target="_blank" class="btn-whatsapp">
+            <a href="https://wa.me/18097022271?text=Hola%20Crisyen%20Variedades,%20me%20interesa%20el%20vino%20de%20seco" target="_blank" class="btn-whatsapp">
                 Pedir por WhatsApp
             </a>
         </div>
-        
 
     </div>
 
