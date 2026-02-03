@@ -30,13 +30,11 @@
             padding-left: 10px;
         }
 
-     .catalogo {
+        .catalogo {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  max-width: 1100px;
-  margin: 0 auto 40px auto;
-  padding: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  justify-items: center;
 }
         .producto {
             background: white;
